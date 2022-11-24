@@ -1,0 +1,66 @@
+.main{
+    background-image: url(./img/clouds.png);
+    max-width: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background: rgb(175, 169, 169);
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+.list-item{
+    margin-right: 20px;
+    height: 200px;
+}
+/* .list-item:nth-child(1){
+    order: 5;
+    flex-basis: 10%;
+}
+.list-item:nth-child(2){
+    flex-basis: 10%;
+}
+.list-item:nth-child(3){
+    flex-basis: 50%;
+}
+.list-item:nth-child(4){
+    flex-basis: 10%;
+}
+.list-item:nth-child(5){
+    flex-basis: 10%;
+}
+.list-item:nth-child(6){
+    flex-basis: 10%;
+} */
+
+.list-item{
+    width: 200px;
+    border: 2px solid black;
+}
+
+
+@media screen and (min-width:1024px){
+    .list-item{
+        width:350px;
+    }
+}
+@media screen and (min-width:1550px){
+    .list-item{
+        width: 200px;
+    }
+    .main{
+        max-width: 1200px;
+    }
+}
+
+/*  всі позішени ,
+почитати гріди ,
+абсолюти.
+*/

@@ -1,0 +1,12 @@
+.title {
+  color: red; }
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .list .list-item {
+    padding: 0px 20px 0px 0px;
+    border: 1px solid red; }
+    .list .list-item:hover {
+      color: green; }

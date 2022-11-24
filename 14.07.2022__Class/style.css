@@ -1,0 +1,230 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  min-width: 0;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+body{ 
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+}
+.proekt{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 30px;
+}
+.card{
+     display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction: column;
+    max-width: 900px;
+}
+.div-title{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 900px;
+    
+    max-width: 900px;
+    min-height: 300px;
+    border: 2px solid rgb(34, 32, 32);
+    margin-bottom: 20px;
+    background:rgb(177, 177, 255);
+    position: relative;
+    
+}
+
+.popup-edit:first-letter {
+color:black;
+text-transform: uppercase;
+font-family: sans-serif;
+font-weight: bold;
+}
+.name-title:first-letter {
+color:  rgb(241, 87, 87);
+font-weight: bold;
+}
+
+.name-title{
+     font-weight: 500;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.edit-button{
+    position: absolute;
+    max-width: 30px;
+    max-height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: rgb(177, 177, 255);
+    right: 10px;
+    bottom: 10px;
+}
+
+.text-card{
+    text-align: start;
+    max-width: 850px;
+    text-indent: 1em;
+    padding: 10px 5px;
+    word-break: break-all;
+    
+}
+.div-title p:first-letter {
+color:black;
+text-transform: uppercase;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+    opacity: 1;
+    visibility:visible;
+     transition: all 0.5s linear;
+
+    
+}
+.popup-content{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 30px 10px;
+    
+}
+
+.popup-edit{
+    background-color: #fff;
+    color: black;
+    width: 800px;
+    height: auto;
+    padding: 40px;
+    text-indent: 1em;
+    
+
+}
+
+.popup-buttons{
+    display: flex;
+    align-items:space-between;
+    justify-content: space-between;
+    width: 200px;
+    height: 70px;
+    padding: 20px;
+}
+
+
+.popup-confirm{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+.popup-cansel{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.popup-confirm:hover{
+    border: 3px solid rgba(2, 120, 12, 0.8);
+    background-color:rgba(177, 177, 177, 1)
+}
+.popup-cansel:hover{
+    
+    border: 3px solid rgba(2, 120, 12, 0.8);
+    background-color:rgba(177, 177, 177, 1)
+}
+
+.remuve-button{
+position: absolute;
+top:10px;
+right: 10px;
+font-size: 20px;
+padding: 0px 5px;
+}
+
+.remuve{
+    display: none;  
+}
+.popup.remuve-edit{
+    opacity: 0;
+    visibility:hidden;
+     animation: zoom 1s linear forwards;
+   
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(0.2);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.popup{
+    opacity: 1;
+    visibility:visible;
+     animation: zoom 1s linear forwards;
+   
+}
+
+

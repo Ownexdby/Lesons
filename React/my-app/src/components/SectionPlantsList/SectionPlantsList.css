@@ -1,0 +1,17 @@
+.text{
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-plats{
+    size: 20px;
+    
+}
+.delet{
+    visibility: hidden;
+    overflow: hidden;
+}
+.un-delet{
+    visibility: visible;
+    overflow: visible;
+}

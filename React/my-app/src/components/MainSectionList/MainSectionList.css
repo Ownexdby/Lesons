@@ -1,0 +1,8 @@
+.delet {
+    visibility: hidden;
+    overflow: hidden;
+}
+.un-delet{
+    visibility:visible;
+    overflow: visible;
+}

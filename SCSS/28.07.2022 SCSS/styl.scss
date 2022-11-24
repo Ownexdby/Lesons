@@ -1,0 +1,26 @@
+@mixin centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.tegs{
+background: yellow;
+height: 100vh;
+
+}
+.pishka {
+
+}
+.list-text {
+@extend centerFlex;
+}
+
+.element-list {
+
+}

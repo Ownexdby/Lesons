@@ -1,0 +1,92 @@
+.blok-list {
+}
+/* .list {
+display:grid;
+grid-template-columns: 100px 200px 300px;
+column-gap: 50px;
+row-gap: 50px;
+justify-content: center;
+align-items: center;
+} */
+/* .list {
+display:grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+column-gap: 50px;
+row-gap: 50px;
+justify-content: center;
+align-items: center;
+} */
+
+.list-item{
+padding: 20px;
+}
+.list-item:nth-child(1) {
+    background-color: rgb(172, 50, 50);
+}
+.list-item:nth-child(2) {
+    background-color: rgb(82, 135, 95);
+}
+.list-item:nth-child(3) {
+    /* height: 100px; */
+    background-color: rgb(53, 34, 174);
+}
+.list-item:nth-child(4) {
+    background-color: rgb(154, 50, 172);
+}
+.list-item:nth-child(5) {
+    /* height: 75px; */
+    background-color: rgb(172, 172, 50);
+}
+.list-item:nth-child(6) {
+    background-color: rgb(186, 24, 3);
+}
+/* Прочитати грід
+ордери в грідах 
+і позішени
+
+
+Доробити Класи
+Взяти посилання на рипозиторій 
+ */
+
+
+.list-item.one {
+    grid-area: one;
+}
+.list-item.two {
+    grid-area: two;
+}
+.list-item.three {
+    grid-area: three;
+}
+.list-item.four {
+    grid-area: four;
+}
+.list-item.five {
+    grid-area: five;
+}
+.list-item.six {
+    grid-area: six;
+}
+
+/* .list {
+display:grid;
+grid-template-columns: repeat(5, 1fr);
+grid-auto-rows: 50px;
+grid-template-areas: 'one one one two two'
+'three four four four four'
+'five five five five six';
+} */
+
+.list {
+display:grid;
+grid-template-columns: repeat(5, 1fr);
+grid-auto-rows: 50px;
+grid-template-areas: 'one one one three four'
+'one one one three six'
+'five five five two six';
+}
+
+/*  react 
+    якщо дороблю проект
+*/
